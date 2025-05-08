@@ -1,1 +1,137 @@
-nihaofds
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华夏文明探源</title>
+    <style>
+        /* 基础样式 */
+        :root {
+            --primary-color: #b71c1c; /* 中国红 */
+            --secondary-color: #fdd835; /* 帝王黄 */
+        }
+        body {
+            font-family: '微软雅黑', '宋体', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        
+        /* 头部导航 */
+        .header {
+            background: var(--primary-color);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 主视觉区 */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('history-banner.jpg');
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 内容区块 */
+        .timeline-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .era-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        .era-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .era-image:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 style="color:white;">华夏五千年</h1>
+            <ul class="nav-menu">
+                <li><a href="#ancient" class="nav-link">上古时期</a></li>
+                <li><a href="#imperial" class="nav-link">帝国时代</a></li>
+                <li><a href="#culture" class="nav-link">文化遗产</a></li>
+                <li><a href="#modern" class="nav-link">现代中国</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">探索中华文明的历史轨迹</h2>
+        </div>
+    </div>
+
+    <main>
+        <section class="timeline-section">
+            <article class="era-card">
+                <img src="xia-shang.jpg" alt="夏商时期" class="era-image">
+                <div>
+                    <h3>夏商周时期 (约前2070-前256)</h3>
+                    <p>中国最早的王朝体系形成阶段，青铜器文明达到鼎盛，甲骨文的出现标志着成熟文字系统的诞生...</p>
+                </div>
+            </article>
+            
+            <article class="era-card">
+                <img src="han-dynasty.jpg" alt="汉唐盛世" class="era-image">
+                <div>
+                    <h3>汉唐盛世 (前202-907)</h3>
+                    <p>丝绸之路开通，中外文化交流频繁，诗歌、绘画、建筑等艺术形式蓬勃发展，形成独特的东方美学体系...</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer style="background:#333; color:white; padding:2rem; text-align:center;">
+        <p>© 2025 中国历史研究院 - 传承文明 启迪未来</p>
+    </footer>
+</body>
+</html>
