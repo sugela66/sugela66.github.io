@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yuxuan Zhang | CV</title><style>
+* {box-sizing:border-box}
+body {margin:0;background:#faf9f6;color:#252822;font:1rem/1.55 Georgia,"Times New Roman",serif}
+main {max-width:58rem;margin:auto;padding:2rem clamp(1rem,5vw,3.5rem) 4rem}
+header {text-align:center;position:relative;padding:.6rem 0 1rem}
+h1 {font-size:clamp(2.1rem,5vw,3rem);line-height:1.15;margin:.4rem 0}
+a {color:#245540;text-underline-offset:.2em;overflow-wrap:anywhere}
+a:focus-visible {outline:2px solid currentColor;outline-offset:3px}
+h2 {font-size:1.35rem;margin:1.4rem 0 .55rem;border-bottom:1px solid #939a90;padding-bottom:.18rem}
+h3 {display:inline;font-size:1.05rem}
+.row {display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:0 1em}
+.entry:not(:first-child) {margin-top:1rem}
+.role {margin-left:.35em}
+.date {white-space:nowrap;color:#444b43;font-variant-numeric:tabular-nums}
+ul {margin:.25rem 0;padding-left:1.4rem}
+li+li {margin-top:.22rem}
+.personal {display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+@media(max-width:650px){.personal {grid-template-columns:1fr}.personal ul {margin:0}.personal ul+ul {margin-top:.22rem}.entry .date {width:100%}.role {margin-left:0}}
+@media print {body {background:white}main {max-width:none;padding:0}h2,h3,.entry {break-after:avoid}}
+</style></head><body><main><header><h1>Yuxuan Zhang</h1></header>
+<section><h2>Personal Information</h2><div class="personal">
+<ul>
+<li><strong>Phone</strong>: +852 52956414</li>
+<li><strong>Email</strong>: <a href="mailto:yxzhang23@mails.tsinghua.edu.cn">yxzhang23@mails.tsinghua.edu.cn</a></li>
+</ul>
+<ul>
+<li><strong>Major</strong>: Computer Science and Technology</li>
+<li><strong>Age</strong>: 21</li>
+</ul></div></section>
+<section><h2>Education</h2><div>
+<div class="entry row"><div><h3>Tsinghua University</h3> <span class="role">B.S. in Computer Science and Technology</span></div> <span class="date">Sep. 2023 – Present</span></div>
+<ul>
+<li><strong>GPA</strong>: 3.3/4.0</li>
+</ul></div></section>
+<section><h2>Research &amp; Academic Experience</h2><div>
+<div class="entry row"><div><h3>Loongson Technology</h3> <span class="role">R&amp;D Intern</span></div> <span class="date">Jul. 2026 – Aug. 2026</span></div>
+<ul>
+<li>Designed an automated code review platform powered by large language models and regular expressions for the GCC LoongArch compiler backend. Implemented a full workflow of automated macro-specification defect detection, secondary validation, and auto-generated refactoring Pull Requests.</li>
+<li>Scanned 803 source files, successfully detected and fixed over 1,500 defects.</li>
+</ul>
+<div class="entry row"><div><h3>Coding Agent with Experience Revision</h3></div></div>
+<ul>
+<li>Developed a coding-agent prototype that generates and executes behavioral probes to revise the conditions under which stored experience applies, then supplies the revised experience to subsequent development tasks.</li>
+<li>Demonstrated conditional revision in a small software project after an API's default behavior changed: the agent excluded the affected default-call condition, retained a valid explicit-option case, and used it in subsequent generated code.</li>
+</ul>
+<div class="entry row"><div><h3>LLM-Driven Proactive Assistant Robot</h3> <span class="role">Advisor: Prof. Huaping Liu</span></div> <span class="date">Oct. 2024 – Jan. 2025</span></div>
+<ul>
+<li>Participated in designing a four-layer multi-agent architecture (perception, planning, decision-making, reflection) to address the lack of proactive collaboration capabilities in service robots.</li>
+<li>Contributed to building a validation dataset with 280 tasks, and assisted in evaluating system performance in text simulation environments and real office scenarios.</li>
+</ul></div></section>
+<section><h2>Engineering &amp; Project Experience</h2><div>
+<div class="entry row"><div><h3>GenWorld: Generative Narrative Agent Platform</h3> <span class="role">Technical Lead</span></div> <span class="date">Jan. 2026 – Present</span></div>
+<ul>
+<li>Designed the agent architecture for a production generative-narrative platform serving multi-step, long-context interactions: a multi-agent player-side chain (role dialogue / option generation / state evaluation / JumpAgent plot-branch routing) and a tool-calling editor agent over 60+ fine-grained tools, kept reliable by a bounded failure budget, pre/post tool-execution hooks, and nudge-driven continuation that prevents runaway tool-call loops and premature stalls in long-horizon tasks.</li>
+<li>Built a three-tier agent memory hierarchy (preset / scene / step) compiled into a memory graph at read time, with explicit visibility and scope filtering plus a scene-candidate mechanism that bounds per-turn context injection, keeping long-horizon interactions within a strict context budget.</li>
+</ul>
+<div class="entry row"><div><h3>Huawei</h3> <span class="role">R&amp;D Intern</span></div> <span class="date">Jul. 2025 – Sep. 2025</span></div>
+<ul>
+<li>Developed an AI-assisted pipeline for automated static code checking and test script generation, deployed to a 200-member team handling over 1,000 Code Merge reviews.</li>
+<li>Achieved a 20% defect detection rate with a false-positive rate under 10%.</li>
+</ul></div></section>
+<section><h2>Honors &amp; Awards</h2><div>
+<ul>
+<li><div class="row"><span>Honorable Mention, Mathematical Contest in Modeling (MCM/ICM)</span> <span class="date">May 2025</span></div></li>
+<li><div class="row"><span>Tsinghua University Freshman Scholarship (Top 5 in Shandong Province in Gaokao)</span> <span class="date">Oct. 2023</span></div></li>
+</ul></div></section>
+<section><h2>Professional Skills</h2><div>
+<ul>
+<li><strong>Languages</strong>: C/C++, Python, Java, JavaScript</li>
+<li><strong>Systems</strong>: macOS, Linux, WSL2/Ubuntu, Git, Docker, ROS, RISC-V/LoongArch toolchain</li>
+<li><strong>Frameworks</strong>: ChromaDB, Vue.js, React</li>
+</ul></div></section>
+</main></body></html>
